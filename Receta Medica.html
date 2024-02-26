@@ -1,0 +1,60 @@
+<form action="reci.php" method="get">
+  <h1>Receta De Medicamentos</h1>
+  <h2>SECCION A. Informacio que debe ser completada por el paciente</h2> 
+ <br>
+    CORREO ELECTRONICO PARA ENVIAR AUTORIZACION: 
+ <input type="meil" name="c" id="c" required> 
+    No. CELULAR: 
+ <input type="number" name="t" id="t" required> 
+ <br><br> 
+    NOMBRE COMPLETO DEL PACIENTE:
+ <input type="text" name="n" id="n" required>
+ <br><br> 
+    EDAD:
+ <input type="number" name="e" id="e" required>
+ <br><br> 
+ CARNET:
+ <input type="text" name="ca" id="ca" required>
+ DPI: 
+ <input type="number" name="dp" id="dp" required>
+   <h2>SECCION B. Informacion que debe ser completada por el Medico Tratante</h2>
+   <br>
+   FECHA DE CONSULTA:  
+   <input type="date" name="f" id="f" required>
+   FECHA ESTIMADA INICIO ENFERMEDAD:  
+   <input type="date" name="fe" id="fe" required>
+   <br><br> 
+   HA SIDO TRATADO ANTES POR ESTA ENFERMEDAD:
+   <select name="h" required>
+    <option value=""> Seleccione </option>
+    <option value="1"> SI </option>
+    <option value="2"> NO </option>
+    </select>
+    <h2>DESPACHADO</h2>
+    <br>
+ DIAGNOSTICO: 
+ <input type="text" name="DI" id="DI" required>
+ <br><br> 
+ NOMBRE DEL MEDICAMENTO:
+ <input type="text" name="ME" id="ME" required>
+ MILIGRAMAJE:
+ <input type="number" name="MI" id="MI" required>
+ <br><br> 
+ DOSIS:
+ <input type="text" name="DO" id="DO" required>
+ CADA:
+ <input type="number" name="CA" id="CA" required>
+ HORAS
+ <br><br>
+ DURANTE:
+ <input type="number" name="DU" id="DU" required>
+ <select name="DUR" required>
+    <option value=""> Seleccione </option>
+    <option value="1"> DIAS </option>
+    <option value="2"> SEMANAS </option>
+    <option value="3"> MESES </option>
+    <option value="4"> INDEFINIDO </option>
+    </select>
+    <br><br>
+    <input type="submit" value="ENVIAR">
+</form>
